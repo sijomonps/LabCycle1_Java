@@ -1,7 +1,14 @@
+import java.util.Scanner;
+
 public class Task15_SumOfDigits {
+
     public static void main(String[] args) {
 
-        int number = 4567;
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int number = sc.nextInt();
+
         int sum = 0;
 
         while (number > 0) {
@@ -11,5 +18,7 @@ public class Task15_SumOfDigits {
         }
 
         System.out.println("Sum of digits = " + sum);
+
+        sc.close();
     }
 }
